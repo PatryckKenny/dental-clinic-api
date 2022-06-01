@@ -4,24 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Autenticação de cadastro e login">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_24__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_05_2022_18_25__Changes_.xml" beforeDir="false" />
+    <list default="true" id="716013ac-ae26-42b4-9dd4-52de48500bae" name="Changes" comment="Excluir Atendimento!">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoAtendimentoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/76249a38-0651-4f6d-8d98-b6f5f280885e/storage_v2/_src_/database/dental-clinic.o1ZJ3A/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/OrcamentoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/OrcamentoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Atendimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Atendimento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Orcamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Orcamento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/PacienteRemovido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dominio/PacienteRemovido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoPacienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoPacienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/repository/AtendimentoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/repository/AtendimentoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/AtendimentoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/AtendimentoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/code/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/config/ResourceServerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/config/ResourceServerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/AtendimentoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/AtendimentoController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/PacienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Endereco.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/controller/ResponsavelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Atendimento.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Atendimento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/Paciente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/dominio/PacienteRemovido.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/dominio/PacienteRemovido.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/repository/ReponsavelRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/AtendimentoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/AtendimentoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/PacienteService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/api/code/service/ResponsavelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/api/code/service/ResponsavelService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +56,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="branch-teste" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,13 +88,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="23FmjWoqjOGRaPhTcDL2ORHZ2cE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -98,6 +107,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/api/code" />
     <property name="last_opened_file_path" value="$USER_HOME$/BeerzerBar-codigo-fonte" />
     <property name="project.structure.last.edited" value="Project" />
@@ -106,6 +116,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="code" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.api.code.CodeApplication" />
@@ -138,6 +159,8 @@
       <workItem from="1652825135066" duration="7801000" />
       <workItem from="1652906392374" duration="1413000" />
       <workItem from="1653349079828" duration="4861000" />
+      <workItem from="1653660683298" duration="584000" />
+      <workItem from="1654089366394" duration="10930000" />
     </task>
     <task id="LOCAL-00001" summary="Projeto Inicial.">
       <created>1641339363271</created>
@@ -271,6 +294,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -291,12 +315,105 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/UsuarioController.java</url>
           <line>38</line>
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
           <line>45</line>
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoAtendimentoDTO.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoAtendimentoDTO.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/dto/NovoPacienteDTO.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/PacienteController.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/api/code/controller/AtendimentoController.java</url>
+          <line>57</line>
+          <properties class="com.api.code.controller.AtendimentoController" method="deletar">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

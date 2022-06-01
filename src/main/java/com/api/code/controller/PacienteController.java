@@ -1,11 +1,14 @@
 package com.api.code.controller;
 
+import com.api.code.dominio.Atendimento;
 import com.api.code.dominio.Paciente;
 import com.api.code.dominio.Responsavel;
 import com.api.code.dto.NovoPacienteDTO;
+import com.api.code.repository.AtendimentoRepository;
 import com.api.code.repository.PacienteRemovidoRepository;
 import com.api.code.repository.PacienteRepository;
 import com.api.code.repository.ResponsavelRepository;
+import com.api.code.service.AtendimentoService;
 import com.api.code.service.PacienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -34,6 +37,12 @@ public class PacienteController {
     @Autowired
     PacienteService pacienteService;
 
+    @Autowired
+    AtendimentoRepository atendimentoRepository;
+
+    @Autowired
+    AtendimentoService atendimentoService;
+
     @GetMapping("listagem")
     @ResponseBody
     public List<Paciente> listar() {
@@ -42,11 +51,12 @@ public class PacienteController {
 
     @PostMapping("incluir")
     public ResponseEntity<Paciente> incluir(@Valid @RequestBody NovoPacienteDTO novoPacienteDTO) {
-        Responsavel responsavel = new Responsavel();
+        Responsavel responsavel = null;
         if(!novoPacienteDTO.isMaiorIdade()){
+            responsavel = new Responsavel();
             responsavel = reponsavelRepository.save(novoPacienteDTO.getNovoResponsavelDTO().toResponsavel());
         }
-        Paciente paciente = pacienteRepository.save(novoPacienteDTO.toPaciente(responsavel.getId()));
+        Paciente paciente = pacienteRepository.save(novoPacienteDTO.toPaciente(responsavel));
         return new ResponseEntity<>(paciente, HttpStatus.CREATED);
     }
 
@@ -54,6 +64,7 @@ public class PacienteController {
     public ResponseEntity<Paciente> deletar(@QueryParam("id") Long id) {
         Optional<Paciente> optional = pacienteRepository.findById(id);
         if (optional.isPresent()) {
+
             pacienteRemovidoRepository.save(pacienteService.preenchendoRemovido(id));
             pacienteRepository.deleteById(id);
             return ResponseEntity.ok().build();

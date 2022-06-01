@@ -18,7 +18,7 @@ public class AtendimentoService {
         atendimentoSalvar.setDataAtendimento(atendimento.getDataAtendimento());
         atendimentoSalvar.setHorario(atendimento.getHorario());
         atendimentoSalvar.setCpfPaciente(atendimento.getCpfPaciente());
-        atendimentoSalvar.setNomePaciente(atendimento.getNomePaciente());
+//        atendimentoSalvar.setNomePaciente(atendimento.getNomePaciente());
         atendimentoSalvar.setLocal(atendimento.getLocal());
         atendimentoSalvar.setObservacao(atendimento.getObservacao());
         return atendimentoSalvar;

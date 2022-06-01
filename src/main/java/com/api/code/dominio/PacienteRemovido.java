@@ -55,18 +55,25 @@ public class PacienteRemovido {
 
     @OneToOne
     @JoinColumn(name = "id_endereco")
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Endereco endereco;
 
     @NotNull
     @Column
     private Date dataRemosão;
 
-    @Column
-    private Long maiorIdade;
+//    @Column
+//    private Long maiorIdade;
+//
+//    @Column
+//    private Long idResponsavel;
 
-    @Column
-    private Long idResponsavel;
+    @OneToOne
+    @JoinColumn(name = "id_responsavel")
+    private Responsavel idResponsavel;
+
+    @OneToOne
+    @JoinColumn(name = "id_dentista")
+    private Usuario idDentista;
 
     @Column
     private Long idDentistaResponsavel;

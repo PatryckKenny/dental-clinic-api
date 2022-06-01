@@ -25,16 +25,16 @@ public class Atendimento {
     private long id;
 
     @Column
-    @NotNull
     private String cpfPaciente;
 
-    @Column
-    @NotNull
-    private String nomePaciente;
 
-    @Column
-    @NotNull
-    private Long idDentista;
+//    @Column
+//    @NotNull
+//    private Long idDentista;
+
+    @OneToOne
+    @JoinColumn(name = "id_dentista")
+    private Usuario idDentista;
 
     @Column
     private String observacao;

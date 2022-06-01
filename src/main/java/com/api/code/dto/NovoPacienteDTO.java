@@ -3,6 +3,8 @@ package com.api.code.dto;
 import com.api.code.dominio.Endereco;
 import com.api.code.dominio.Paciente;
 
+import com.api.code.dominio.Responsavel;
+import com.api.code.dominio.Usuario;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -26,10 +28,10 @@ public class NovoPacienteDTO {
     private NovoResponsavelDTO novoResponsavelDTO;
     private Endereco endereco;
     private boolean maiorIdade;
-    private Long idDentistaResponsavel;
+    private Usuario dentistaResponsavel;
     private String informacoesAdicionais;
 
-    public Paciente toPaciente(Long id) {
+    public Paciente toPaciente(Responsavel responsavel) {
         Paciente paciente = new Paciente();
         paciente.setNomeCompleto(nomeCompleto);
         paciente.setEmail(email);
@@ -42,8 +44,8 @@ public class NovoPacienteDTO {
         paciente.setTelefoneFixo(telefoneFixo);
         paciente.setEndereco(endereco);
         paciente.setMaiorIdade(maiorIdade);
-        paciente.setIdResponsavel(id);
-        paciente.setIdDentistaResponsavel(idDentistaResponsavel);
+        paciente.setIdResponsavel(responsavel);
+        paciente.setIdDentista(dentistaResponsavel);
         paciente.setInformacoesAdicionais(informacoesAdicionais);
         return paciente;
     }

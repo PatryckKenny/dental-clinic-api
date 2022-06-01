@@ -53,19 +53,26 @@ public class Paciente {
     @Column
     private String telefoneFixo;
 
-    @OneToOne
+    @OneToOne(cascade=CascadeType.PERSIST)
     @JoinColumn(name = "id_endereco")
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private Endereco endereco;
 
     @Column
     private Boolean maiorIdade;
 
-    @Column
-    private Long idResponsavel;
+//    @Column
+//    private Long idResponsavel;
 
-    @Column
-    private Long idDentistaResponsavel;
+    @OneToOne
+    @JoinColumn(name = "id_responsavel")
+    private Responsavel idResponsavel;
+
+    //@Column
+    //private Long idDentistaResponsavel;
+
+    @OneToOne
+    @JoinColumn(name = "id_dentista")
+    private Usuario idDentista;
 
     @Column
     private String informacoesAdicionais;

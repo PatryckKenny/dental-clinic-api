@@ -4,6 +4,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -26,11 +27,20 @@ public class Orcamento {
     @NotNull
     private String nomePaciente;
 
-    @Column
-    private Long idDentista;
+//    @Column
+//    private Long idDentista;
 
-    @Column
-    private Long idPaciente;
+    @OneToOne
+    @JoinColumn(name = "id_dentista")
+    private Usuario idDentista;
+//
+//    @Column
+//    private Long idPaciente;
+
+    @OneToOne
+    @JoinColumn(name = "id_Paciente")
+    private Paciente idPaciente;
+
 
     @Column
     private String observacao;

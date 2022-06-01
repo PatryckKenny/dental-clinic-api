@@ -2,6 +2,7 @@ package com.api.code.repository;
 
 import com.api.code.dominio.Atendimento;
 import com.api.code.dominio.Endereco;
+import com.api.code.dominio.Paciente;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -2,7 +2,11 @@ package com.api.code.controller;
 
 import com.api.code.dominio.Atendimento;
 import com.api.code.dominio.Paciente;
+import com.api.code.dominio.Usuario;
+import com.api.code.dto.NovoAtendimentoDTO;
 import com.api.code.repository.AtendimentoRepository;
+import com.api.code.repository.PacienteRepository;
+import com.api.code.repository.UsuarioRepository;
 import com.api.code.service.AtendimentoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,11 +29,21 @@ public class AtendimentoController {
     @Autowired
     AtendimentoService atendimentoService;
 
+    @Autowired
+    UsuarioRepository usuarioRepository;
+
+    @Autowired
+    PacienteRepository pacienteRepository;
+
+
 
     @PostMapping("incluir")
-    public ResponseEntity<Atendimento> incluir(@Valid @RequestBody Atendimento atendimento) {
+    public ResponseEntity<Atendimento> incluir(@Valid @RequestBody NovoAtendimentoDTO novoAtendimento) {
 
-        atendimentoRepository.save(atendimento);
+        Paciente paciente = pacienteRepository.findPacienteByCpf(novoAtendimento.getCpfPaciente());
+        Usuario usuario = usuarioRepository.findById(novoAtendimento.getIdDentista()).get();
+
+        Atendimento atendimento = atendimentoRepository.save(novoAtendimento.toAtendimento(paciente, usuario));
         return new ResponseEntity<>(atendimento, HttpStatus.CREATED);
     }
 
